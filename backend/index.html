@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blender AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="new-chat-btn" id="newChatBtn">
+                + New Chat
+            </div>
+            <div class="history-list" id="historyList">
+                <!-- Chat history will be populated here -->
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Blender AI Assistant</h1>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your Blender AI Assistant. I can help you create 3D objects and scenes in Blender through natural language commands.</p>
+                        <p>Try asking me to create a cube, sphere, or any 3D object you'd like!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-container">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Message Blender AI Assistant..." 
+                    rows="1"
+                ></textarea>
+                <button id="sendBtn" class="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
